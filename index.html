@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Micro Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Student Enrollment Form</h2>
+        
+            <form method="post">
+                <div class="form-group ">
+                    <label>
+                        Roll No.
+                        <span class="asteriskField">
+                            *
+                        </span>
+                    </label>
+                    <input class="form-control" id="Id" placeholder="Enter Roll no." type="text" onchange="getStd()" />
+                </div>
+                <div class="form-group ">
+                    <label>
+                        Name
+                    </label>
+                    <input class="form-control" id="name" placeholder="Enter full name" type="text"/>
+                </div>
+                <div class="form-group ">
+                    <label>
+                        Class
+                    </label>
+                    <input class="form-control" id="stdclass" placeholder="Enter class" type="text" />
+                </div>
+                <div class="form-group ">
+                    <label>
+                        Date of birth
+                    </label>
+                    <input class="form-control" id="dob" placeholder="MM/DD/YYYY" type="text"/>
+                </div>
+                <div class="form-group ">
+                    <label>
+                        Address
+                    </label>
+                    <input class="form-control" id="address" placeholder="Enter your address" type="text"/>
+                </div>
+                <div class="form-group ">
+                    <label>
+                        Enrollment-date
+                    </label>
+                    <input class="form-control" id="enrollmentdate" placeholder="MM/DD/YYYY" type="text"/>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <button class="btn btn-primary " id="save" type="submit" onclick="saveData()">
+                            Save
+                        </button>
+                        <button class="btn btn-primary " id="update" type="button" onclick="updateData()" disabled>
+                            Update
+                        </button>
+                        <button class="btn btn-primary " id="reset" type="button" onclick="resetForm()" disabled>
+                            Reset
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        
+        <script type ="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script type="text/javascript" src="Student.js"></script>
+    </body>
+</html>
